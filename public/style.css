@@ -1,1 +1,5 @@
-/* your styles, here */
+img{
+  display: table;
+  margin: 0 auto;
+  padding: 20px;
+}

@@ -45,6 +45,7 @@ class App extends Component {
       <div className="row">
         <div className="small-9 small-centered columns">
           <h1 className="text-center">My Pretty Unicorn Collector</h1>
+          <img src="https://bit.ly/2uLAPtL"></img>
           <UnicornFormContainer
 
           />
