@@ -1,5 +1,7 @@
 # Get collecting with My Pretty Unicorn Collector!
 
+![Unicorns](https://cdn.dribbble.com/users/141427/screenshots/2072640/lu_dribble_1x.png)
+
 Let's create our very own unicorn app, where we can see a list of unicorns, add new unicorns to our list, and go to individual unicorn show pages.
 
 ## Part 1
