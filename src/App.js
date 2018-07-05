@@ -1,15 +1,12 @@
-import React from 'react';
-import { Route, IndexRoute, Router, browserHistory } from 'react-router';
+import React from 'react'
 
-import UnicornPageContainer from './containers/UnicornPageContainer'
-
-const App = (props) => {
-  return (
+const App = () => {
+  return(
     <div>
-      Replace this div with your Router.
-      <UnicornPageContainer />
+      Hello from the Apps.js
+      <img src="https://pre00.deviantart.net/7829/th/pre/i/2017/365/d/6/garyl_the_binicorn_by_notwerewolf-dbyiqbj.png" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
