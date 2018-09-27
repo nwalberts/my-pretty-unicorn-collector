@@ -9,7 +9,11 @@ class UnicornShowContainer extends Component {
   }
 
   componentDidMount(){
+    fetch("", {})
+    .then(response => response.json())
+    .then(body => {
 
+    })
   }
 
   render(){
