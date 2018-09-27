@@ -1,6 +1,9 @@
 import React from 'react'
+import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 
 const App = () => {
+
+  // routes routes routes
   return(
     <div>
       Hello from the Apps.js
