@@ -16,7 +16,8 @@ def read_unicorns
 end
 
 get "/" do
-  redirect "/unicorns"
+  erb :home
+  # redirect "/unicorns"
 end
 
 get "/unicorns" do
@@ -29,6 +30,7 @@ end
 
 # API ENDPOINTS
 get "/api/v1/unicorns" do
+  # binding.pry
   unicorns = read_unicorns
 
   content_type :json
@@ -47,9 +49,11 @@ get "/api/v1/unicorns/:id" do
 end
 
 post "/api/v1/unicorns" do
+  # binding.pry
   current_unicorns = read_unicorns
 
   unicorn = JSON.parse(request.body.read)
+  # binding.pry
   unicorn["id"] = current_unicorns.last["id"] + 1
 
   current_unicorns << unicorn

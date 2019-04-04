@@ -1,12 +1,23 @@
 import React from 'react'
+import { Router, Route, browserHistory, IndexRoute } from "react-router"
+
+import UnicornPageContainer from "./containers/UnicornPageContainer"
+import UnicornShowContainer from "./containers/UnicornShowContainer"
 
 const App = () => {
+
   return(
-    <div>
-      Hello from the Apps.js
-      <img src="https://pre00.deviantart.net/7829/th/pre/i/2017/365/d/6/garyl_the_binicorn_by_notwerewolf-dbyiqbj.png" />
-    </div>
+    <Router history={browserHistory} >
+      <Route path="/" component={UnicornPageContainer} />
+      <Route path="/unicorns" component={UnicornPageContainer} />
+      <Route path="/unicorns/:id" component={UnicornShowContainer}  />
+    </Router>
   )
 }
 
 export default App
+
+// <div>
+//   <UnicornPageContainer />
+//   <UnicornShowContainer />
+// </div>
