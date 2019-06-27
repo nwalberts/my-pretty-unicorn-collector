@@ -29,6 +29,7 @@ end
 
 # API ENDPOINTS
 get "/api/v1/unicorns" do
+  # binding.pry
   unicorns = read_unicorns
 
   content_type :json
@@ -47,6 +48,7 @@ get "/api/v1/unicorns/:id" do
 end
 
 post "/api/v1/unicorns" do
+  binding.pry
   current_unicorns = read_unicorns
 
   unicorn = JSON.parse(request.body.read)

@@ -18,5 +18,10 @@
     "id": 4,
     "unicornName": "JX657 the Robot Unicorn ",
     "description": "Favorite quote: Open your eyes and see, your eyes are open. Magical robot unicorn. Can transform into a unicorn bear "
+  },
+  {
+    "unicornName": "Todd",
+    "description": "The Chosen",
+    "id": 5
   }
 ]

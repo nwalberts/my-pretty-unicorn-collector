@@ -1,20 +1,13 @@
 import React from 'react';
 import UnicornTile from '../components/UnicornTile';
 
-class UnicornsIndexContainer extends React.Component {
+class UnicornIndexContainer extends React.Component {
   constructor(props){
     super(props)
-    this.state = {
-      unicorns: []
-    }
-  }
-
-  componentDidMount(){
-
   }
 
   render() {
-    let unicorns = this.state.unicorns.map(unicorn => {
+    let unicorns = this.props.unicorns.map(unicorn => {
       return(
         <UnicornTile
           key={unicorn.id}
@@ -24,8 +17,8 @@ class UnicornsIndexContainer extends React.Component {
     })
 
     return(
-      <div className='page'>
-        <h1>Who Runs the World? Unicorns</h1>
+      <div className='page border'>
+        <h1>Unicorn Index Container</h1>
         <div className='unicorn-list'>
           {unicorns}
         </div>
@@ -34,4 +27,4 @@ class UnicornsIndexContainer extends React.Component {
   }
 }
 
-export default UnicornsIndexContainer;
+export default UnicornIndexContainer;

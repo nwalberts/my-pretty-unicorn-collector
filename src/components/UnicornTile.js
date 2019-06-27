@@ -4,7 +4,7 @@ const UnicornTile = props => {
 
   return(
     <div>
-      <div>
+      <div className="callout">
         <h5> {props.unicorn.unicornName} </h5>
       </div>
     </div>
